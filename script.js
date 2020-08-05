@@ -28,7 +28,6 @@ function addExpenseToTotal(){
 
     const textDesc = inputDescEl.value;
 
-    // console.log({ textDesc, textAmount });
     //convert it to number
     const expense = parseInt(textAmount, 10);
     
@@ -48,10 +47,6 @@ function addExpenseToTotal(){
     const someText = `Total: ${totalExpense}`;
     headingEl.textContent = someText;
 
-//     const allExpenseHTML = allExpenses.map(expense => createListItem(expense));
-//    const joinallExpenseHTML = allExpenseHTML.join('');
-//     expenseTableEl.innerHTML = joinallExpenseHTML;
-// all of these are inside renderList Function
     renderList(allExpenses);
 }
 
